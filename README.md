@@ -7,20 +7,22 @@ Clone your project normally:
 ```bash
 git clone https://github.com/dosbox-staging/dosbox-staging.git
 cd dosbox-staging
+```
 
 Then run:
 
+```bash
 git clone https://github.com/lonestarmac/gbb.git
 ./gbb/gbb.sh -DDEBUG=ON -DCMAKE_BUILD_TYPE=Debug
+```
 
 GBB will:
-
-    Detect missing libraries
-    Fix CMake errors automatically
-    Apply optional patches
-    Build your project
-    Capture errors if needed
+  -  Detect missing libraries
+  -  Fix CMake errors automatically
+  -  Apply optional patches
+  -  Build your project
+  -  Capture errors if needed
 
 Why use GBB?
 
-Building from source on macOS should jut work*. GBB bridges the gap between upstream instructions and Homebrew paths and dependencies.
+Building from source on macOS should just work*. GBB bridges the gap between upstream instructions and Homebrew paths and dependencies.
