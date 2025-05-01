@@ -6,7 +6,6 @@ import (
 	"os"
 	"time"
 
-	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/bubbles/list"
 	"github.com/charmbracelet/lipgloss"
 )
@@ -14,10 +13,10 @@ import (
 var appVersion = "v0.1"
 
 var statusColors = map[string]string{
-	"red": lipgloss.NewStyle().Foreground(lipgloss.Color("1")).Render("Not ready"),
+	"red":    lipgloss.NewStyle().Foreground(lipgloss.Color("1")).Render("Not ready"),
 	"yellow": lipgloss.NewStyle().Foreground(lipgloss.Color("3")).Render("Can build with changes"),
-	"green": lipgloss.NewStyle().Foreground(lipgloss.Color("2")).Render("Ready"),
-	"blue": lipgloss.NewStyle().Foreground(lipgloss.Color("4")).Render("Ready (Offline)"),
+	"green":  lipgloss.NewStyle().Foreground(lipgloss.Color("2")).Render("Ready"),
+	"blue":   lipgloss.NewStyle().Foreground(lipgloss.Color("4")).Render("Ready (Offline)"),
 }
 
 type menuItem string
@@ -27,9 +26,9 @@ func (i menuItem) Description() string { return "" }
 func (i menuItem) FilterValue() string { return string(i) }
 
 type model struct {
-	list list.Model
+	list       list.Model
 	readyState string
-	selected string
+	selected   string
 }
 
 func initialModel() model {

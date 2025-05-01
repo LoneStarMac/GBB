@@ -1,0 +1,22 @@
+{
+    "plugins": [
+      {
+        "name": "dosbox",
+        "description": "Official plugin for building DosBox from source using CMake.",
+        "file": "dosbox.json",
+        "status": "official",
+        "author": "isnarly",
+        "version": "0.1",
+        "matches": ["dosbox", "dos-box"]
+      },
+      {
+        "name": "cmake-default",
+        "description": "Fallback plugin for generic CMake-based projects.",
+        "file": "cmake-default.json",
+        "status": "experimental",
+        "author": "isnarly",
+        "version": "0.1",
+        "matches": ["cmake", "default"]
+      }
+    ]
+  }
