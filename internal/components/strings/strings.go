@@ -20,4 +20,5 @@ const (
 	MenuChangeBuilder  = "Change builder (currently: %s)"
 	MenuOptions        = "Options"
 	MenuBuildNow       = "🚀 Build %s now"
+	MainMenuPrompt     = "Choose an action:"
 )
